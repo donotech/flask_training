@@ -2,13 +2,13 @@
 <body>
 <div class="jumbotron">
         <h1>Flask Site</h1>
-        <form class="form-signin">
-        <label for="inputName" class="sr-only">Name</label>
-        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+        <form action="/dologin" method="get">
+        <label for="username" class="sr-only">Name</label>
+        <input type="name" name="username" id="username" class="form-control" placeholder="Name" required autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 
-        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Login</button>
+        <button type="submit" id="btnSignUp" class="btn btn-lg btn-primary btn-block">Login</button>
       </form>
       </div>
 </body>
